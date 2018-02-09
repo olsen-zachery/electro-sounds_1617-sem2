@@ -1,9 +1,9 @@
-import codeanticode.syphon.SyphonServer;
+import codeanticode.syphon.SyphonServer; //syphon
 
-SyphonServer syphon;
+SyphonServer syphon; //syphon
 
 void settings() {
-  size(1280, 720, P3D);
+  size(1280, 720, P3D); //1280x720 dimension
   PJOGL.profile=1;
   smooth(8);
 }
@@ -23,12 +23,12 @@ PGraphics pg;
  
 void setup() {
   syphon = new SyphonServer( this , "p5-to-syphon" );
-  background(0);
-  frameRate(5);
+  background(0); //background black
+  frameRate(5); //speed of frame change
 }
  
 void draw() {
-  translate(width/2, height/2);
+  translate(width/2, height/2); //start from middle of screen
 
   newX = x*cos(theta)- y*sin(theta);
   newY = x*sin(theta)+ y*cos(theta);
