@@ -1,8 +1,8 @@
-ArrayList<Spaceship> spaceships;
+ArrayList<Spaceship> spaceships; //arraylist
 
-import codeanticode.syphon.SyphonServer;
+import codeanticode.syphon.SyphonServer; //syphon
 
-SyphonServer syphon;
+SyphonServer syphon; //syphon
 
 void settings() {
   size(1280, 720, P3D);
@@ -11,8 +11,8 @@ void settings() {
 }
 
 void setup() {
-  noStroke();
-  spaceships = new ArrayList();
+  noStroke(); //no stroke on objects
+  spaceships = new ArrayList(); 
   for (int i=0; i<1000; i++) {
     spaceships.add(new Spaceship());
       syphon = new SyphonServer( this , "p5-to-syphon" );
@@ -30,10 +30,11 @@ float g = random(255);
 float b = random(255);
 
 void draw() {
-  background(0);
+  background(0); //background black
    myCounter += speed * direction;
 
-  background(myCounter%255, (myCounter)%255, (myCounter)%255);
+  background(myCounter%255, (myCounter)%255, (myCounter)%255); 
+  //background pulse between black and white
 
 
 
