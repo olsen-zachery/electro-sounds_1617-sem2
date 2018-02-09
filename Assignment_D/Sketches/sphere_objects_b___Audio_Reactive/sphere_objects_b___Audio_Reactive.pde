@@ -1,34 +1,28 @@
-import codeanticode.syphon.SyphonServer;
+import codeanticode.syphon.SyphonServer; //syphon
 
-SyphonServer syphon;
+SyphonServer syphon; //syphon
 
-ArrayList<Ball> balls = new ArrayList();
+ArrayList<Ball> balls = new ArrayList(); //arraylist
 
 void settings() { 
-  size(1280,720, P3D);
+  size(1280,720, P3D); //1280x720 dimensions
     PJOGL.profile=1;
       smooth(8);
 }
 
 void setup() {
- syphon = new SyphonServer( this , "p5-to-syphon" );
- // frameRate(60);
-
+ syphon = new SyphonServer( this , "p5-to-syphon" ); 
   
+  noStroke(); //no stroke on spheres
   
-  //minim = new Minim(this);
-  //in = minim.getLineIn(Minim.STEREO, 512);
-  
-  noStroke();
-  
-  for (int i=0; i<200; i++) {
+  for (int i=0; i<200; i++) { 
     balls.add(new Ball());
   }
 } 
 
 void draw() {
-  background(255);
-  lights();
+  background(255); //background white
+  lights(); //lights
   
   for(int j = 0; j < balls.size(); j++){
     balls.get(j).a = 10+ mouseX + 2*mouseY;// +  4*frameCount; //in.left.get(j)*500;//   
