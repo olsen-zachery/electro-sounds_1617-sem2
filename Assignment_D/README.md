@@ -22,9 +22,9 @@ The soundtrack I used was written by me to support the simple feel to the video.
 
 (https://processing.org/examples/hue.html)
 
-![image]()
+![image](https://78.media.tumblr.com/49375428e2a0f09b10b2c1eca5d557ae/tumblr_inline_p3vk9wmtzh1usshp7_540.png)
 
-![image]()
+![image](https://78.media.tumblr.com/a6a21c18031e3544a407541ec4490684/tumblr_inline_p3vk9vxqlZ1usshp7_540.png)
 
 
 
